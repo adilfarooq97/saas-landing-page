@@ -11,20 +11,20 @@ export default function App() {
 
   const faqs = [
     {
-      q: "How hard is it to install MetricFlow on my site?",
-      a: "It takes under two minutes. Just paste our lightweight 2KB script tag into your HTML header or install via our official React/Next.js package."
+      q: "How does MetricFlow compare to Google Analytics 4 (GA4)?",
+      a: "Unlike GA4 which requires complex tag configuration and has data sampling delays, MetricFlow tracks real-time event-based metrics automatically with zero setup and 100% data accuracy."
     },
     {
-      q: "Does MetricFlow slow down my website performance?",
-      a: "Not at all. Our script is loaded asynchronously from global CDNs with a payload under 2KB, ensuring zero impact on your core web vitals."
+      q: "Does the script slow down our core web vitals?",
+      a: "No. The tracking script is CDN-hosted, edge-cached, and under 1.8 KB (gzipped) — executing asynchronously with zero blocking on the main browser thread."
     },
     {
-      q: "Is MetricFlow fully compliant with GDPR and CCPA?",
-      a: "Yes! We offer 100% cookie-less tracking and host server infrastructure with automated data residency options to keep you compliant out of the box."
+      q: "Are you fully GDPR and CCPA compliant?",
+      a: "Yes. MetricFlow uses cookie-less fingerprinting by default and offers full EU data residency options so you never have to display intrusive cookie consent banners."
     },
     {
-      q: "Can I cancel or change my plan anytime?",
-      a: "Absolutely. You can upgrade, downgrade, or cancel your subscription at any time with a single click inside your billing settings."
+      q: "Can I upgrade or downgrade as my trackable volume scales?",
+      a: "Yes, you can scale your plan up or down at any time from your billing settings without losing historical analytical data."
     }
   ];
 
@@ -99,7 +99,7 @@ export default function App() {
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-normal leading-relaxed">
-          Track conversion funnel friction, automate user insights, and scale your SaaS revenue with zero configuration required.
+          Track conversion funnel friction, reduce user churn below 2%, and scale your recurring revenue with zero tracking setup.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -111,7 +111,7 @@ export default function App() {
           </button>
         </div>
 
-        {/* Dashboard Mockup */}
+        {/* Dashboard Mockup - Realistic SaaS Benchmarks */}
         <div className="mt-16 rounded-2xl border border-slate-800 bg-slate-900/80 p-4 sm:p-6 backdrop-blur-2xl shadow-2xl max-w-5xl mx-auto relative group overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/10 via-purple-500/5 to-transparent rounded-2xl pointer-events-none" />
           
@@ -127,38 +127,43 @@ export default function App() {
             <div className="w-12" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
-            <div className="p-5 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-slate-700 transition-all">
-              <span className="text-xs text-slate-400 font-medium">Monthly Recurring Revenue</span>
-              <div className="text-2xl font-bold mt-1 text-white">$42,850</div>
-              <span className="text-xs text-emerald-400 mt-2 block font-medium">↑ +14.2% this month</span>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-left">
+            <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-slate-700 transition-all">
+              <span className="text-xs text-slate-400 font-medium">ARR (Annual Recurring)</span>
+              <div className="text-xl font-bold mt-1 text-white">$514,200</div>
+              <span className="text-xs text-emerald-400 mt-2 block font-medium">↑ +18.4% QoQ</span>
             </div>
-            <div className="p-5 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-slate-700 transition-all">
-              <span className="text-xs text-slate-400 font-medium">Active Subscriptions</span>
-              <div className="text-2xl font-bold mt-1 text-white">1,284</div>
-              <span className="text-xs text-emerald-400 mt-2 block font-medium">↑ +8.1% this week</span>
+            <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-slate-700 transition-all">
+              <span className="text-xs text-slate-400 font-medium">Net Revenue Retention</span>
+              <div className="text-xl font-bold mt-1 text-white">112%</div>
+              <span className="text-xs text-emerald-400 mt-2 block font-medium">↑ Top 10% Industry</span>
             </div>
-            <div className="p-5 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-slate-700 transition-all">
-              <span className="text-xs text-slate-400 font-medium">Funnel Conversion Rate</span>
-              <div className="text-2xl font-bold mt-1 text-white">4.2%</div>
-              <span className="text-xs text-indigo-400 mt-2 block font-medium">✨ Optimized by AI</span>
+            <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-slate-700 transition-all">
+              <span className="text-xs text-slate-400 font-medium">User Churn Rate</span>
+              <div className="text-xl font-bold mt-1 text-white">1.8%</div>
+              <span className="text-xs text-emerald-400 mt-2 block font-medium">↓ -0.6% vs benchmark</span>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-slate-700 transition-all">
+              <span className="text-xs text-slate-400 font-medium">Trial Conversion</span>
+              <div className="text-xl font-bold mt-1 text-white">8.4%</div>
+              <span className="text-xs text-indigo-400 mt-2 block font-medium">✨ AI Optimized</span>
             </div>
           </div>
         </div>
       </main>
 
-      {/* Social Proof Logo Cloud */}
+      {/* Real SaaS Brand Logos */}
       <section className="py-12 border-y border-slate-900 bg-slate-950/50">
         <div className="max-w-7xl mx-auto px-6">
           <p className="text-center text-xs font-semibold text-slate-500 uppercase tracking-widest">
-            Trusted by modern high-growth teams
+            Used by tech-forward teams across modern SaaS
           </p>
-          <div className="mt-8 flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 text-slate-400 font-bold text-lg">
-            <span>VELOCITY</span>
-            <span>ACME CORP</span>
-            <span>NEXUS</span>
-            <span>HYPERION</span>
-            <span>PULSE.IO</span>
+          <div className="mt-8 flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-300 text-slate-400 font-extrabold text-lg tracking-wider">
+            <span>SUPABASE</span>
+            <span>VERCEL</span>
+            <span>RESEND</span>
+            <span>CLERK</span>
+            <span>RAYCAST</span>
           </div>
         </div>
       </section>
@@ -299,7 +304,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="border-t border-slate-900 py-12 text-center text-xs text-slate-500">
-        <p>© {new Date().getFullYear()} MetricFlow Inc. Designed & Built for High Conversions.</p>
+        <p>© 2026 MetricFlow Inc. Designed & Built for High Conversions.</p>
       </footer>
     </div>
   );
